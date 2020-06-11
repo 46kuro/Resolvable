@@ -8,6 +8,7 @@
 
 #if DEBUG
 
+import Injectable
 import Foundation
 
 extension HomeViewController: Resolvable {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,9 @@
 		D4449E282483F73D0069847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4449E272483F73D0069847A /* Assets.xcassets */; };
 		D4449E2B2483F73D0069847A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4449E292483F73D0069847A /* LaunchScreen.storyboard */; };
 		D4449E362483F73D0069847A /* SamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4449E352483F73D0069847A /* SamplesTests.swift */; };
-		D4BDBD8B2483F80E00EBEFC4 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDBD8A2483F80E00EBEFC4 /* Injectable.swift */; };
 		D4BDBDA32483F97B00EBEFC4 /* ResolveInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDBDA22483F97B00EBEFC4 /* ResolveInput.swift */; };
 		D4BDBDA52483FA8E00EBEFC4 /* Resolve.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDBDA42483FA8E00EBEFC4 /* Resolve.generated.swift */; };
+		D4C0BF45249261CA00B018FE /* Injectable in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0BF44249261CA00B018FE /* Injectable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		D4449E312483F73D0069847A /* SamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4449E352483F73D0069847A /* SamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesTests.swift; sourceTree = "<group>"; };
 		D4449E372483F73D0069847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4BDBD8A2483F80E00EBEFC4 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		D4BDBDA22483F97B00EBEFC4 /* ResolveInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveInput.swift; sourceTree = "<group>"; };
 		D4BDBDA42483FA8E00EBEFC4 /* Resolve.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolve.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C0BF45249261CA00B018FE /* Injectable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,6 @@
 				D4449E272483F73D0069847A /* Assets.xcassets */,
 				D4449E292483F73D0069847A /* LaunchScreen.storyboard */,
 				D4449E2C2483F73D0069847A /* Info.plist */,
-				D4BDBD8A2483F80E00EBEFC4 /* Injectable.swift */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -132,6 +131,9 @@
 			dependencies = (
 			);
 			name = Samples;
+			packageProductDependencies = (
+				D4C0BF44249261CA00B018FE /* Injectable */,
+			);
 			productName = Samples;
 			productReference = D4449E1B2483F73C0069847A /* Samples.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +184,9 @@
 				Base,
 			);
 			mainGroup = D4449E122483F73C0069847A;
+			packageReferences = (
+				D4C0BF43249261CA00B018FE /* XCRemoteSwiftPackageReference "Injectable" */,
+			);
 			productRefGroup = D4449E1C2483F73C0069847A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,7 +227,6 @@
 				D4449E1F2483F73C0069847A /* AppDelegate.swift in Sources */,
 				D4BDBDA52483FA8E00EBEFC4 /* Resolve.generated.swift in Sources */,
 				D4449E212483F73C0069847A /* SceneDelegate.swift in Sources */,
-				D4BDBD8B2483F80E00EBEFC4 /* Injectable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +493,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4C0BF43249261CA00B018FE /* XCRemoteSwiftPackageReference "Injectable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:46kuro/Injectable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4C0BF44249261CA00B018FE /* Injectable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0BF43249261CA00B018FE /* XCRemoteSwiftPackageReference "Injectable" */;
+			productName = Injectable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4449E132483F73C0069847A /* Project object */;
 }

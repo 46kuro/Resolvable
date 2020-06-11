@@ -2,7 +2,7 @@ import Commander
 import Foundation
 import Resolver
 
-extension String {
+private extension String {
     func substring (range: Range<Int>) -> String {
         return String(self[self.index(self.startIndex, offsetBy: range.lowerBound)..<self.index(self.startIndex, offsetBy: range.upperBound)])
     }

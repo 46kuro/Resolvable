@@ -6,6 +6,7 @@
 //  Copyright © 2020 Shinji Kurosawa. All rights reserved.
 //
 
+import Injectable
 import UIKit
 
 final class HomeViewController: UIViewController, FactoryInjectable {
