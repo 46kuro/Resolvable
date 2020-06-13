@@ -1,0 +1,16 @@
+PODS:
+  - Resolvable (0.0.2)
+
+DEPENDENCIES:
+  - Resolvable
+
+SPEC REPOS:
+  trunk:
+    - Resolvable
+
+SPEC CHECKSUMS:
+  Resolvable: afdea00309289388f2b2e86572698b3b3619cce0
+
+PODFILE CHECKSUM: 66864dbc340ce4dc47a371f1fcdeaddbaf967923
+
+COCOAPODS: 1.8.0

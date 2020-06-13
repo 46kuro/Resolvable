@@ -1,0 +1,6 @@
+framework module Resolvable {
+  umbrella header "Resolvable-umbrella.h"
+
+  export *
+  module * { export * }
+}

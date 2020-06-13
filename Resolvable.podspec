@@ -14,8 +14,13 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '46kuro' => 'https://twitter.com/kuroFront46' }
   s.source           = { :git => 'https://github.com/46kuro/Injectable.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
-  s.source_files = 'Injectable/Classes/**/*'
-  s.dependency 'SourceKitten', '~> 0.29.0'
-  s.dependency 'Commander', '~> 0.9.1'
+  s.ios.deployment_target = '9.0'
+  s.source_files = 'Sources/Injectable/*.swift'
+  s.swift_versions = ['5.1', '5.2']
+  # s.resource_bundles = {
+  #   'Injectable' => ['Injectable/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
 end
