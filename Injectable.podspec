@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Injectable'
+  s.name             = '46kuro/Injectable'
   s.version          = '0.0.2'
   s.summary          = 'Static dependency injection framework for Swift.'
   s.homepage         = 'https://github.com/46kuro/Injectable'
