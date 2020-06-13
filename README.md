@@ -1,10 +1,10 @@
 # ※ This Framework is now implementing...
 
-## Injectable
+## Resolvable
 
-Injectable is static dependency injection framework for Swift.
+Resolvable is static dependency injection framework for Swift.
 
-Injectable aims to achieve the following primary goals.
+Resolvable aims to achieve the following primary goals.
 
 1. High customizability and flexibility.
 

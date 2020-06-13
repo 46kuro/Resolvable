@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "Injectable",
+    name: "Resolvable",
     platforms: [.macOS(.v10_10), .iOS(.v9)],
     products: [
         .executable(name: "di-resolver", targets: ["di-resolver"]),
-        .library(name: "Injectable", targets: ["Injectable"]),
+        .library(name: "Resolvable", targets: ["Resolvable"]),
         .library(name: "Resolver", targets: ["Resolver"])
     ],
     dependencies: [
@@ -16,10 +16,10 @@ let package = Package(
         .package(url: "https://github.com/kylef/Commander.git", from: "0.9.1")
     ],
     targets: [
-        .target(name: "Injectable"),
+        .target(name: "Resolvable"),
         .target(name: "Resolver", dependencies: ["SourceKittenFramework"]),
         .target(name: "di-resolver", dependencies: ["Resolver", "Commander"]),
-        .testTarget( name: "InjectableTests", dependencies: ["Injectable"]),
+        .testTarget( name: "ResolvableTests", dependencies: ["Resolvable"]),
         .testTarget( name: "ResolverTests", dependencies: ["Resolver"]),
     ]
 )
